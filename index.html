@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Lost & Found</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🔎 Lost & Found</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#report">Report</a>
+        <a href="#items">Search Items</a>
+    </nav>
+</header>
+
+
+<!-- HOME -->
+
+<section id="home" class="hero">
+
+    <div class="hero-text">
+
+        <p class="tag">PRAGATI ENGINEERING COLLEGE</p>
+
+        <h1>
+            Digital<br>
+            <span>Lost & Found</span>
+        </h1>
+
+        <p>
+            A simple digital platform to report, search and reconnect
+            lost items with their owners.
+        </p>
+
+        <div class="buttons">
+
+            <a href="#report" class="btn">
+                Report an Item
+            </a>
+
+            <a href="#items" class="btn secondary">
+                Find an Item
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-card">
+
+        <div class="search-icon">🔎</div>
+
+        <h3>Find What You Lost</h3>
+
+        <p>
+            Search reported lost and found items easily.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- FEATURES -->
+
+<section class="features">
+
+    <div class="feature">
+
+        <div>📢</div>
+
+        <h3>Report Lost</h3>
+
+        <p>
+            Report your missing belongings.
+        </p>
+
+    </div>
+
+
+    <div class="feature">
+
+        <div>📦</div>
+
+        <h3>Report Found</h3>
+
+        <p>
+            Help return an item to its owner.
+        </p>
+
+    </div>
+
+
+    <div class="feature">
+
+        <div>🔍</div>
+
+        <h3>Search</h3>
+
+        <p>
+            Search items by name or location.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- DASHBOARD -->
+
+<section id="dashboard" class="dashboard">
+
+    <h2>Lost & Found Dashboard</h2>
+
+    <p class="subtitle">
+        Quick overview of reported items
+    </p>
+
+
+    <div class="dashboard-container">
+
+
+        <div class="dashboard-card">
+
+            <div class="dashboard-icon">📋</div>
+
+            <h3 id="totalItems">3</h3>
+
+            <p>Total Items</p>
+
+        </div>
+
+
+        <div class="dashboard-card">
+
+            <div class="dashboard-icon">🔴</div>
+
+            <h3 id="totalLost">1</h3>
+
+            <p>Lost Items</p>
+
+        </div>
+
+
+        <div class="dashboard-card">
+
+            <div class="dashboard-icon">🟢</div>
+
+            <h3 id="totalFound">2</h3>
+
+            <p>Found Items</p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- REPORT -->
+
+<section id="report" class="section">
+
+    <h2>Report an Item</h2>
+
+    <p class="subtitle">
+        Choose whether the item is lost or found.
+    </p>
+
+
+    <div class="form-container">
+
+        <form id="itemForm">
+
+
+            <label>Report Type</label>
+
+            <select id="type" required>
+
+                <option value="">Select</option>
+
+                <option value="Lost">
+                    Lost Item
+                </option>
+
+                <option value="Found">
+                    Found Item
+                </option>
+
+            </select>
+
+
+            <label>Item Name</label>
+
+            <input
+                type="text"
+                id="itemName"
+                placeholder="Example: College ID Card"
+                required
+            >
+
+
+            <label>Category</label>
+
+            <select id="category" required>
+
+                <option value="">
+                    Select Category
+                </option>
+
+                <option>Documents</option>
+
+                <option>Electronics</option>
+
+                <option>Books</option>
+
+                <option>Accessories</option>
+
+                <option>Other</option>
+
+            </select>
+
+
+            <label>Location</label>
+
+            <input
+                type="text"
+                id="location"
+                placeholder="Example: Library"
+                required
+            >
+
+
+            <label>Date</label>
+
+            <input
+                type="date"
+                id="date"
+                required
+            >
+
+
+            <label>Description</label>
+
+            <textarea
+                id="description"
+                placeholder="Describe the item..."
+                required
+            ></textarea>
+
+
+            <label>Contact</label>
+
+            <input
+                type="text"
+                id="contact"
+                placeholder="Phone / Email"
+                required
+            >
+
+
+            <button
+                type="submit"
+                class="submit-btn"
+            >
+                Submit Report
+            </button>
+
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- SEARCH -->
+
+<section id="items" class="section items-section">
+
+    <h2>
+        Search Lost & Found Items
+    </h2>
+
+
+    <input
+        type="text"
+        id="search"
+        class="search-box"
+        placeholder="🔍 Search item, category or location..."
+    >
+
+
+    <div
+        id="itemsContainer"
+        class="items-container"
+    ></div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <h3>
+        🔎 Digital Lost & Found
+    </h3>
+
+    <p>
+        Helping students reconnect with their belongings.
+    </p>
+
+    <p>
+        © 2026 College Project
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
